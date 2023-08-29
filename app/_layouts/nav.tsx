@@ -16,14 +16,13 @@ export default function Nav() {
         }
     ]
     return (
-        <nav>
-            <ul>
+        <nav className="flex">
+            <ul className="flex">
                 {navLinks.map((link) => {
                     const isActive = pathname === link.href
                     return (
-                        <li>
+                        <li className="pl-5" key={link.name}>
                             <Link
-                                key={link.name}
                                 href={link.href}
                                 className={isActive ? "text-blue-500 underline" : "text-black"}
                             >

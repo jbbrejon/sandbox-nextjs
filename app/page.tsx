@@ -1,7 +1,11 @@
+import H1 from "./_components/h1"
+
 export default function Home() {
   return (
     <main>
-      <h1 className="text-3xl font-bold">Home Page</h1>
+      <H1
+        title="Home Page"
+      />
     </main>
   )
 }

@@ -19,9 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        {children}
+      <body className={inter.className} suppressHydrationWarning={true}>
+        <div id='container' className='max-w-7xl mx-auto'>
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   )

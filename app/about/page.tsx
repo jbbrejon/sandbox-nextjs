@@ -1,7 +1,10 @@
+import H1 from "../_components/h1"
 export default function About() {
     return (
         <main>
-            <h1 className="text-3xl font-bold">About Page</h1>
+            <H1
+                title="About Page"
+            />
         </main>
     )
 }
